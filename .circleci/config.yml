@@ -29,7 +29,6 @@ jobs:
             docker run --rm --privileged multiarch/qemu-user-static:register
             sudo apt-get -y install wget git
             sudo wget https://github.com/multiarch/qemu-user-static/releases/download/v2.9.1/qemu-ppc64le-static.tar.gz -O /tmp/qemu-ppc64le-static.tar.gz
-            sudo file /tmp/qemu-ppc64le-static.tar.gz
             mkdir tmp
             tar -zxvf /tmp/qemu-ppc64le-static.tar.gz -C tmp
       - run:
